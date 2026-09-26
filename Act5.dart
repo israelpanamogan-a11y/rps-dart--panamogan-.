@@ -126,4 +126,16 @@ void main() {
   int pTwoScore = finalScores[1];
 
   
+  print("");
+  print("==== FINAL SCORE ====");
+  print("${playerNames[0]}: $pOneScore | "
+      "${playerNames[1]}: $pTwoScore");
+
+  if (pOneScore > pTwoScore) {
+    print("Overall winner: ${playerNames[0]}");
+  } else if (pTwoScore > pOneScore) {
+    print("Overall winner: ${playerNames[1]}");
+  } else {
+    print("Overall result: Tie!");
+  }
 }
